@@ -46,7 +46,7 @@ In this section, you will use the elbow method to find the best value for k.
 2. Plot a line chart with all the inertia values computed with the different values of k to visually identify the optimal value for k.
 
 3. Answer the following question: What is the best value for k?
-Based on this Elbow Curve, it looks like k=4 is the best value.
+*Based on this Elbow Curve, it looks like k=4 is the best value.
    
 
 ### Cluster Cryptocurrencies with K-means Using the Original Data
