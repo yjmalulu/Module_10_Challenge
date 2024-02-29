@@ -46,6 +46,8 @@ In this section, you will use the elbow method to find the best value for k.
 2. Plot a line chart with all the inertia values computed with the different values of k to visually identify the optimal value for k.
 
 3. Answer the following question: What is the best value for k?
+Based on this Elbow Curve, it looks like k=4 is the best value.
+   
 
 ### Cluster Cryptocurrencies with K-means Using the Original Data
 
@@ -72,8 +74,9 @@ In this section, you will perform a principal component analysis (PCA) and reduc
 3. Retrieve the explained variance to determine how much information can be attributed to each principal component.
 
 4. Answer the following question: What is the total explained variance of the three principal components?
+   About 89.5% of the total variance is condensed into the three principal components.
 
-5. Create a new DataFrame with the PCA data. Be sure to set the `coin_id` index from the original DataFrame as the index for the new DataFrame. Review the resulting DataFrame.
+6. Create a new DataFrame with the PCA data. Be sure to set the `coin_id` index from the original DataFrame as the index for the new DataFrame. Review the resulting DataFrame.
 
 ### Find the Best Value for k Using the PCA Data
 
@@ -84,6 +87,8 @@ In this section, you will use the elbow method to find the best value for k by u
 2. Plot a line chart with all the inertia values computed with the different values of k to visually identify the optimal value for k.
 
 3. Answer the following questions: What is the best value for k when using the PCA data? Does it differ from the best k value found using the original data?
+   k=4 looks like the best value for k when using the PCA data.
+   No. It appears that coin segmentation information using the the original data yielded similiar results that the PCA analysis.
 
 ### Cluster Cryptocurrencies with K-means Using the PCA Data
 
@@ -108,6 +113,7 @@ In this section, you will visually analyze the cluster analysis results by obser
 2. Create a composite plot using hvPlot and the plus (`+`) operator to compare the cryptocurrencies clusters using the original data and the PCA data.
 
 3. Answer the following question: After visually analyzing the cluster analysis results, what is the impact of using fewer features to cluster the data by using K-means?
+   The impact of using fewer features for K-Means clustering hinges on achieving a balance between reducing dimensionality (and thus complexity) and retaining enough information to accurately reflect the underlying structure of the data. Effective feature selection or dimensionality reduction can enhance clustering performance and interpretability but requires careful consideration to avoid overlooking critical data characteristics.
 
 > **Hint** Recall that you learned how to create composite plots in Module 6. Review that module if you need a refresher on making these plots. You can also check [the hvPlot documentation](https://holoviz.org/tutorial/Composing_Plots.html).
 
